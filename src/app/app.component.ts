@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'space-dashboard';
+  videoURL = '/assets/videos/Animation%20Of%20Stars.mp4';
 }

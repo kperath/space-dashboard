@@ -44,3 +44,9 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Tailwind Files (added by me)
+ng-tailwind.js
+src/assets/videos/
+src/tailwind.css
+

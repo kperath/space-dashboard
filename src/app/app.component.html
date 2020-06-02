@@ -1,7 +1,21 @@
+<!-- the background -->
 <div class="hidden md:block fixed h-full w-full">
   <video class="object-cover w-full h-full" autoplay loop muted>
     <source [src]="videoURL" type="video/mp4">
   </video>
 </div>
+
+<!-- the card -->
+<a href="index.html">
+  <div class="relative flex text-lg text-center mb-8">
+    <h1 class="uppercase bg-red-400">BIG CAT DASHBOARD</h1>
+    <div class="w-full"><br></div>
+  </div>
+</a>
+
+<!--&lt;!&ndash; tiles &ndash;&gt;-->
+<!--<div class="flex flex-wrap justify-center items-center">-->
+<!--  <app-tile [imageURL]="nasaTileImageURL" [imageDescription]="nasaTileDescription"></app-tile>-->
+<!--</div>-->
 
 <router-outlet></router-outlet>

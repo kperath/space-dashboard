@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackgroundComponent implements OnInit {
   videoURL = '/assets/videos/Animation%20Of%20Stars.mp4';
-  videoSettings = 'autoplay loop muted';
 
   constructor() { }
 

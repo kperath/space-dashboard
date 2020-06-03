@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { AppComponent } from './app.component';
 import { TileComponent } from './tile/tile.component';
 import { NasaPodComponent } from './nasa-pod/nasa-pod.component';
@@ -16,11 +17,12 @@ import { BackgroundComponent } from './background/background.component';
     NasaPodComponent,
     DashboardComponent,
     CardComponent,
-    BackgroundComponent
+    BackgroundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

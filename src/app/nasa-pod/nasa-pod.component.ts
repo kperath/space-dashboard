@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NasaPodService} from '../nasa-pod.service';
 import {INasaPod} from '../I-nasa-pod';
 
@@ -11,10 +11,12 @@ export class NasaPodComponent implements OnInit {
 
   constructor(private nasaPodService: NasaPodService) {}
 
-  pod: INasaPod;
+  @Input() pictureOfDay: INasaPod;
 
   ngOnInit(): void {
-    this.nasaPodService.getPOD().subscribe((data: INasaPod) => {this.pod = data; });
+    this.nasaPodService.getPOD().subscribe((respData: INasaPod) => {
+      this.pictureOfDay = respData;
+    });
   }
 
 }

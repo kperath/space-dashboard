@@ -50,3 +50,5 @@ ng-tailwind.js
 src/assets/videos/
 src/tailwind.css
 
+src/environments/environment.ts
+src/environments/environment.prod.ts

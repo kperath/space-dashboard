@@ -6,3 +6,7 @@ export interface INasaPod {
   mediaType: string;
   url: string;
 }
+
+export interface INasaKey {
+  nasaKey: string;
+}

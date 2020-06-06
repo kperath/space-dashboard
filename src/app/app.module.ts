@@ -13,7 +13,6 @@ import { BackgroundComponent } from "./background/background.component";
 @NgModule({
   declarations: [
     AppComponent,
-    NasaPodComponent,
     CardComponent,
     BackgroundComponent,
   ],

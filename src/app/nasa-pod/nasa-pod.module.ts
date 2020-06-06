@@ -11,4 +11,4 @@ import { NasaPodComponent} from "./nasa-pod.component";
     NasaPodRoutingModule
   ]
 })
-export class DashboardModule { }
+export class NasaPodModule { }

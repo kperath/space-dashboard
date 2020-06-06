@@ -8,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class DashboardComponent implements OnInit {
 
   nasaTileImageURL = "/assets/images/nasa.jpg";
-  nasaTileDescription = "See Nasa's Picture of the Day";
+  nasaTileDescription = "See Nasa's Astronomy Picture of the Day";
 
   constructor() { }
 

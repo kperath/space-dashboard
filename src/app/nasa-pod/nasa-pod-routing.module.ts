@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 
-import { NasaPodComponent} from "./nasa-pod.component";
+import { NasaPodComponent } from "./nasa-pod.component";
 
 
 const routes: Routes = [

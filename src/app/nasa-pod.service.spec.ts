@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { NasaPodService } from './nasa-pod.service';
+import { NasaPodService } from "./nasa-pod.service";
 
-describe('NasaPodService', () => {
+describe("NasaPodService", () => {
   let service: NasaPodService;
 
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe('NasaPodService', () => {
     service = TestBed.inject(NasaPodService);
   });
 
-  it('should be created', () => {
+  it("should be created", () => {
     expect(service).toBeTruthy();
   });
 });

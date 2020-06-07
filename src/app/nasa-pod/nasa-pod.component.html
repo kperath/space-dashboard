@@ -1,4 +1,4 @@
-<div *ngIf="pod" class="absolute flex justify-center items-center">
+<div *ngIf="pod && config; else elseBlock" class="absolute flex justify-center items-center">
   <div class="border-4 border-gray-400 bg-gray-100 rounded-lg p-4 my-4 mx-8 select-text">
     <h1 class="text-2xl text-center">{{ this.pod?.title }} <span class="font-bold">({{ this.pod?.date}})</span></h1>
     <div class="flex justify-center m-4">
@@ -7,3 +7,6 @@
     <p class="text-center px-12">{{ this.pod?.explanation}}</p>
   </div>
 </div>
+<ng-template #elseBlock>
+  <app-error-page></app-error-page>
+</ng-template>

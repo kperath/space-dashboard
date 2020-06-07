@@ -4,9 +4,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from "./app.component";
-import { TileComponent } from "./tile/tile.component";
-import { NasaPodComponent } from "./nasa-pod/nasa-pod.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
 import { CardComponent } from "./card/card.component";
 import { BackgroundComponent } from "./background/background.component";
 

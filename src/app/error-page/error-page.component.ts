@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Time } from "@angular/common";
 
 @Component({
   selector: "app-error-page",
@@ -10,6 +11,10 @@ export class ErrorPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  timeout() {
+    setTimeout(() => true, 5000);
   }
 
 }

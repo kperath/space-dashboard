@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from "@angular/core";
 import {Config, ConfigService} from "../config.service";
 import {PodData, NasaPodService} from "../nasa-pod.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: "app-nasa-pod",
@@ -12,10 +13,15 @@ export class NasaPodComponent implements OnInit {
   config: Config;
   pod: PodData;
 
-  constructor(private configService: ConfigService, private nasaPodService: NasaPodService) {}
+  constructor(private configService: ConfigService, private nasaPodService: NasaPodService, private router: Router) {}
 
   ngOnInit(): void {
     this.getKey();
+    setTimeout(() => {
+      if (!this.config) {
+        this.router.navigateByUrl("dashboard/error").then(() => {}).catch(e => console.log(e));
+      }
+    }, 3000);
   }
 
   getKey() {

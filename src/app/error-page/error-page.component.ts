@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Time } from "@angular/common";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-error-page",
@@ -8,13 +8,12 @@ import { Time } from "@angular/common";
 })
 export class ErrorPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  timeout() {
-    setTimeout(() => true, 5000);
+    setTimeout(() => {
+      this.router.navigateByUrl("dashboard").then(() => {}).catch((e) => console.log(e));
+    }, 1000);
   }
 
 }

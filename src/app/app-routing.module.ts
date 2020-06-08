@@ -12,7 +12,7 @@ const routes: Routes = [
       .then(m => m.DashboardModule)
       .catch(e => console.log(e))
   },
-  { path: "dashboard/tile",
+  { path: "dashboard/apod",
     loadChildren: () => import("./nasa-pod/nasa-pod.module")
       .then(m => m.NasaPodModule)
       .catch(e => console.log(e))

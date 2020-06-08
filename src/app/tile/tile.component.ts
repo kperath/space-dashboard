@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from "@angular/core";
 import { NasaPodService } from "../nasa-pod.service";
+import { DOCUMENT} from "@angular/common";
 
 @Component({
   selector: "app-tile",
@@ -11,6 +12,7 @@ export class TileComponent implements OnInit {
   @Input() imageURL: string;
   @Input() imageDescription: string;
   @Input() imageDate: string;
+  @Input() imageRoute: string;
 
   constructor(private nasaPodService: NasaPodService) { }
 
@@ -18,8 +20,12 @@ export class TileComponent implements OnInit {
   }
 
   APIRequest() {
-    this.nasaPodService.setDate(this.imageDate);
+    if (this.imageRoute === "apod") {
+      this.nasaPodService.setDate(this.imageDate);
+    }
+    else {
+      // this.document.location.href = this.imageRoute;
+      window.open(this.imageRoute, "_blank");
+    }
   }
-
-  // pass date into tile component and tile component passes that data to nasapod service
 }

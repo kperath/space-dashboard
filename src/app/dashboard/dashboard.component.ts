@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class DashboardComponent implements OnInit {
 
+  nasaTileURL = "apod";
   nasaTileArray = [
     {
       nasaTileImageURL: "/assets/images/apod.jpg",
@@ -52,23 +53,10 @@ export class DashboardComponent implements OnInit {
       nasaTileImageURL: "/assets/images/2013.jpg",
       nasaTileDescription: "New Year 2013 Astronomy Picture!",
       nasaImageDate: "2013-01-01"
-    },
-    // {
-    //   nasaTileImageURL: "/assets/images/apod.jpg",
-    //   nasaTileDescription: "New Year 2012 Astronomy Picture!",
-    //   nasaImageDate: "2012-01-01"
-    // },
-    // {
-    //   nasaTileImageURL: "/assets/images/apod.jpg",
-    //   nasaTileDescription: "New Year 2011 Astronomy Picture!",
-    //   nasaImageDate: "2011-01-01"
-    // },
-    // {
-    //   nasaTileImageURL: "/assets/images/apod.jpg",
-    //   nasaTileDescription: "New Year 2010 Astronomy Picture!",
-    //   nasaImageDate: "2010-01-01"
-    // },
+    }
   ];
+
+  tileSite = "https://www.nasa.gov/";
 
   constructor() { }
 

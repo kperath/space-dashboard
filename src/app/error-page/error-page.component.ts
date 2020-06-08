@@ -13,7 +13,7 @@ export class ErrorPageComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigateByUrl("dashboard").then(() => {}).catch((e) => console.log(e));
-    }, 1000);
+    }, 1500);
   }
 
 }

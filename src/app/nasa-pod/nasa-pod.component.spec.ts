@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { NasaPodComponent } from './nasa-pod.component';
+import { NasaPodComponent } from "./nasa-pod.component";
 
-describe('NasaPodComponent', () => {
+describe("NasaPodComponent", () => {
   let component: NasaPodComponent;
   let fixture: ComponentFixture<NasaPodComponent>;
 
@@ -19,7 +19,7 @@ describe('NasaPodComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

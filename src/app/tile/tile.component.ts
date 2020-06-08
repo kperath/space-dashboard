@@ -24,7 +24,6 @@ export class TileComponent implements OnInit {
       this.nasaPodService.setDate(this.imageDate);
     }
     else {
-      // this.document.location.href = this.imageRoute;
       window.open(this.imageRoute, "_blank");
     }
   }

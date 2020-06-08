@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from "@angular/core";
 })
 export class TileComponent implements OnInit {
 
-  @Input() imageURL;
+  @Input() imageURL: string;
   @Input() imageDescription: string;
 
   constructor() { }

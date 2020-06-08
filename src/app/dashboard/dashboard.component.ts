@@ -11,6 +11,10 @@ export class DashboardComponent implements OnInit {
   nasaTileDescription = "See Nasa's Astronomy Picture of the Day";
   nasaImageDate = "";
 
+  nasaTileImageURL2 = "/assets/images/apod.jpg";
+  nasaTileDescription2 = "New Yearrrrrrr";
+  nasaImageDate2 = "2020-01-01";
+
   constructor() { }
 
   ngOnInit(): void {

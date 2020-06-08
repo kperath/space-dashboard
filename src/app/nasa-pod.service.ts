@@ -11,13 +11,22 @@ export class NasaPodService {
 
   constructor(private http: HttpClient) { }
   date = "&date=";
+  getRequest: Observable<PodData>;
 
   getData(config: Config): Observable<PodData> {
-    return this.http.get<PodData>(`${environment.API_URL}${config.nasaKey}${this.date}`);
+    this.getRequest = this.http.get<PodData>(`${environment.API_URL}${config.nasaKey}${this.date}`);
+    console.log("date preReset:" + this.date);
+    this.resetDate();
+    console.log("date postReset:" + this.date);
+    return this.getRequest;
   }
 
   setDate(date= "") {
     this.date += date;
+  }
+
+  resetDate() {
+    this.date = "&date=";
   }
 }
 

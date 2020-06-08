@@ -15,6 +15,9 @@ export class TileComponent implements OnInit {
   constructor(private nasaPodService: NasaPodService) { }
 
   ngOnInit(): void {
+  }
+
+  APIRequest() {
     this.nasaPodService.setDate(this.imageDate);
   }
 

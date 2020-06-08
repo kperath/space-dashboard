@@ -10,9 +10,14 @@ import {environment} from "../environments/environment";
 export class NasaPodService {
 
   constructor(private http: HttpClient) { }
+  date = "&date=";
 
   getData(config: Config): Observable<PodData> {
-    return this.http.get<PodData>(`${environment.API_URL}${config.nasaKey}`);
+    return this.http.get<PodData>(`${environment.API_URL}${config.nasaKey}${this.date}`);
+  }
+
+  setDate(date= "") {
+    this.date += date;
   }
 }
 

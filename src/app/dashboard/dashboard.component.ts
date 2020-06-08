@@ -9,6 +9,7 @@ export class DashboardComponent implements OnInit {
 
   nasaTileImageURL = "/assets/images/apod.jpg";
   nasaTileDescription = "See Nasa's Astronomy Picture of the Day";
+  nasaImageDate = "";
 
   constructor() { }
 

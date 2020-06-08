@@ -12,7 +12,6 @@ export class NasaPodComponent implements OnInit {
 
   config: Config;
   pod: PodData;
-  @Input() date: string;
 
   constructor(private configService: ConfigService, private nasaPodService: NasaPodService, private router: Router) {}
 
@@ -25,12 +24,9 @@ export class NasaPodComponent implements OnInit {
     }, 3000);
   }
 
-  getKey(date= "") {
+  getKey() {
     this.configService.getConfig().subscribe(
-     ((data) => {
-       this.config = { nasaKey: data.nasaKey};
-       this.config.nasaKey += date;
-     }),   // next function
+     (data => this.config = { nasaKey: data.nasaKey}),   // next function
      (error => console.log(error)),       // error function
      (() => {
        console.log("key received");

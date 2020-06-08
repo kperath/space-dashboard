@@ -1,5 +1,6 @@
 <!-- tiles -->
 <div class="flex flex-wrap justify-center items-center">
-  <app-tile [imageURL]="nasaTileImageURL" [imageDescription]="nasaTileDescription" [imageDate]="nasaImageDate"></app-tile>
-  <app-tile [imageURL]="nasaTileImageURL2" [imageDescription]="nasaTileDescription2" [imageDate]="nasaImageDate2"></app-tile>
+  <div *ngFor="let tile of nasaTileArray">
+    <app-tile [imageURL]="tile.nasaTileImageURL" [imageDescription]="tile.nasaTileDescription" [imageDate]="tile.nasaImageDate"></app-tile>
+  </div>
 </div>
